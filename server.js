@@ -4,11 +4,11 @@ const app=express()
 app.set('views','/views')
 app.set('view engine','ejs')
 
-var text={"hello.txt":`9B5CEDE9D7A70F9CF6DB3651184233BEF7CAA655AA87E0003E9EC3D8A838F25F
+var text={"hello.txt":`DFE8F6EA2BC50A4CAC6AE07BE2CF33FCF1F816A2BCEC6461290049AEF1C1DC6B
 comodoca.com
-4880b3465e032ea`};
-app.get('/.well-known/pki-validation/C5AC3D350BAA3333C0F6530D91622AA5.txt',function(req,res){
-    res.set({"Content-Disposition":"attachment; filename=\"C5AC3D350BAA3333C0F6530D91622AA5.txt\""});
+d023f29b4d3d1be`};
+app.get('/.well-known/pki-validation/23837BA095293AC280F3BA89B3B31A02.txt',function(req,res){
+    res.set({"Content-Disposition":"attachment; filename=\"23837BA095293AC280F3BA89B3B31A02.txt\""});
     res.send(text['hello.txt']);
 });
 app.listen(3000)
